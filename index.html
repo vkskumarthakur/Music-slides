@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rooba.finance animation</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
@@ -17,46 +25,119 @@
           <div class="brand-name">ASTR <br />IX</div>
           <div class="">EVE <br />NTS</div>
         </div>
-        <div class="switch-btn-container">
-          <div class="switch-btn">
-            <button>Events</button>
-          </div>
-          <div class="switch-btn collection">
-            <button>Collections</button>
-          </div>
+        <div class="btn-container">
+          <label class="switch btn-color-mode-switch">
+            <input
+              value="1"
+              id="color_mode"
+              name="color_mode"
+              type="checkbox"
+            />
+            <label
+              class="btn-color-mode-switch-inner"
+              data-off="Events"
+              data-on="Collections"
+              for="color_mode"
+            ></label>
+          </label>
         </div>
         <div class="slider-container">
-          <div class="slider">
-            <div class="slides">
-              <div class="slide">
+          <!-- <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <img
-                  src="https://hollywoodlife.com/wp-content/uploads/2021/05/Selena-Gomez-New-Album-Everything-To-Know-vertical.jpg"
+                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
                   width="100%"
                   alt=""
                 />
               </div>
-              <div class="slide">
+              <div class="swiper-slide">
                 <img
-                  src="https://hollywoodlife.com/wp-content/uploads/2021/05/Selena-Gomez-New-Album-Everything-To-Know-vertical.jpg"
+                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
                   width="100%"
                   alt=""
                 />
               </div>
-              <div class="slide">
+              <div class="swiper-slide">
                 <img
-                  src="https://hollywoodlife.com/wp-content/uploads/2021/05/Selena-Gomez-New-Album-Everything-To-Know-vertical.jpg"
+                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
                   width="100%"
                   alt=""
                 />
               </div>
-              <div class="slide">
+              <div class="swiper-slide">
                 <img
-                  src="https://hollywoodlife.com/wp-content/uploads/2021/05/Selena-Gomez-New-Album-Everything-To-Know-vertical.jpg"
+                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
                   width="100%"
                   alt=""
                 />
               </div>
             </div>
+            <div class="swiper-pagination"></div>
+          </div> -->
+
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://thumbs.dreamstime.com/b/beautiful-female-singer-singing-microphone-vertical-shot-black-background-49208817.jpg"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://i.pinimg.com/474x/b1/c8/80/b1c8808d546ad95ed7943ba3284d894e.jpg"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://www.hollywoodreporter.com/wp-content/uploads/2014/02/Shakira_performs_for_TMobile_aBryant_Park_2013_New_York_City.jpg"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
           </div>
         </div>
       </section>
@@ -152,23 +233,40 @@
         </div>
       </section>
     </main>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
-      let currentIndex = 0;
-      const slides = document.querySelector(".slides");
-      const totalSlides = document.querySelectorAll(".slide").length;
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 50,
+        loop: false, // Loop is disabled for custom navigation
+        autoplay: {
+          delay: 1500, // Time between slides in milliseconds
+          disableOnInteraction: false, // Keeps autoplay enabled after user interactions
+        },
+        on: {
+          slideChangeTransitionEnd: function () {
+            const activeIndex = swiper.activeIndex;
+            const slidesCount = swiper.slides.length;
 
-      function showNextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateSlidePosition();
-      }
+            if (activeIndex === slidesCount - swiper.params.slidesPerView) {
+              // When the last slide is reached, go to the first slide in reverse manner
+              setTimeout(() => {
+                swiper.slideTo(0, 1000, false); // Transition to the first slide without animation
+              }, 2500); // Match this timeout with the autoplay delay
+            }
+          },
+        },
+      });
 
-      function updateSlidePosition() {
-        slides.style.transition = "transform 0.5s ease-in-out";
-        slides.style.transform = `translateX(${-currentIndex * 100}%)`;
-      }
-
-      // Auto-slide every 3 seconds
-      setInterval(showNextSlide, 3000);
+      swiper.on("slideChangeTransitionStart", function () {
+        const slides = document.querySelectorAll(".swiper-slide");
+        slides.forEach((slide) => (slide.style.transform = "scale(1)"));
+        const activeSlides = document.querySelectorAll(".swiper-slide-active");
+        activeSlides.forEach((slide) => (slide.style.transform = "scale(1.1)"));
+      });
     </script>
   </body>
 </html>
