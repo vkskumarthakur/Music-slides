@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rooba.finance animation</title>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    /> -->
+    <title>rooba.finance figam assessment</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -16,224 +12,452 @@
   </head>
   <body>
     <main>
-      <section class="left">
-        <div class="left-header-top">
-          <img src="./assets/imgs/Astrix-Branding.png" alt="" />
-          <img src="./assets/imgs/Logo.png" alt="" />
-        </div>
-        <div class="title-name">
-          <div class="brand-name">ASTR <br />IX</div>
-          <div class="">EVE <br />NTS</div>
-        </div>
-        <div class="btn-container">
-          <label class="switch btn-color-mode-switch">
-            <input
-              value="1"
-              id="color_mode"
-              name="color_mode"
-              type="checkbox"
-            />
-            <label
-              class="btn-color-mode-switch-inner"
-              data-off="Events"
-              data-on="Collections"
-              for="color_mode"
-            ></label>
-          </label>
-        </div>
-        <div class="slider-container">
-          <!-- <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
-                  width="100%"
-                  alt=""
-                />
+      <div class="main-container">
+        <div class="newslide" id="slide-first">
+          <section class="left">
+            <div class="left-header-top">
+              <img
+                src="./assets/imgs/Astrix-Branding.png"
+                alt=""
+                class="logo"
+              />
+              <img src="./assets/imgs/Logo.png" alt="" />
+            </div>
+            <div class="title-name">
+              <div class="brand-name">ASTR <br />IX</div>
+              <div class="">EVE <br />NTS</div>
+            </div>
+            <div class="btn-container">
+              <button
+                class="event-btn"
+                onclick="openSlide('slide-first')"
+                onclick="toggleActive('event')"
+              >
+                Events
+              </button>
+              <button
+                class="collections-btn"
+                onclick="openSlide('slide-second')"
+                onclick="toggleActive('collection')"
+              >
+                Collections
+              </button>
+            </div>
+            <div class="slider-container">
+              <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/imgs/Frame-1.png" width="100%" alt="" />
+                    <p class="card-event">Event Name</p>
+                    <div class="card-location">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin"
+                      >
+                        <path
+                          d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <p>Location</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/imgs/frame-2.png" width="100%" alt="" />
+                    <p class="card-event">Event Name</p>
+                    <div class="card-location">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin"
+                      >
+                        <path
+                          d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <p>Location</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/imgs/frame-3.png" width="100%" alt="" />
+                    <p class="card-event">Event Name</p>
+                    <div class="card-location">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin"
+                      >
+                        <path
+                          d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <p>Location</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/imgs/frame-4.png" width="100%" alt="" />
+                    <p class="card-event">Event Name</p>
+                    <div class="card-location">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin"
+                      >
+                        <path
+                          d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <p>Location</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
               </div>
             </div>
-            <div class="swiper-pagination"></div>
-          </div> -->
+          </section>
+          <section class="middle">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
+              cum!
+            </p>
+          </section>
+          <section class="right">
+            <p class="top-title">Explore Your First <br />Event</p>
+            <p class="event-name">Event Name</p>
+            <div class="venue-at">
+              <div class="location">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin"
+                >
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <p>Venue</p>
+              </div>
+              <div class="timing">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-alarm-clock"
+                >
+                  <circle cx="12" cy="13" r="8" />
+                  <path d="M12 9v4l2 2" />
+                  <path d="M5 3 2 6" />
+                  <path d="m22 6-3-3" />
+                  <path d="M6.38 18.7 4 21" />
+                  <path d="M17.64 18.67 20 21" />
+                </svg>
+                <p>04/03/2024 @19:00</p>
+              </div>
+            </div>
+            <div class="event-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              architecto aut ab pariatur nisi natus laudantium deserunt sequi id
+              eligendi!
+            </div>
+            <div class="artist-avatar">
+              <p>Artist Lineup</p>
+              <div class="artist-card">
+                <div class="card">
+                  <img
+                    src="https://thumbs.dreamstime.com/b/beautiful-female-singer-singing-microphone-vertical-shot-black-background-49208817.jpg"
+                    width="100%"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
+                    width="100%"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    src="https://www.hollywoodreporter.com/wp-content/uploads/2014/02/Shakira_performs_for_TMobile_aBryant_Park_2013_New_York_City.jpg"
+                    width="100%"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="qr-code-container">
+              <div class="qr-code">
+                <img
+                  src="https://cdn.ttgtmedia.com/rms/misc/qr_code_barcode.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="join-btn">
+                <button>Join Waitlist</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="newslide" id="slide-second">
+          <section class="left">
+            <div class="left-header-top">
+              <img
+                src="./assets/imgs/Astrix-Branding.png"
+                alt=""
+                class="logo"
+              />
+              <img src="./assets/imgs/Logo.png" alt="" />
+            </div>
+            <div class="title-name">
+              <div class="brand-name">ASTR <br />IX</div>
+              <div class="">EVE <br />NTS</div>
+            </div>
+            <div class="btn-container">
+              <button
+                class="event-btn"
+                onclick="openSlide('slide-first')"
+                style="background-color: gray; z-index: 1"
+              >
+                Events
+              </button>
+              <button
+                class="collections-btn"
+                onclick="openSlide('slide-second')"
+                style="
+                  background-color: #484e56;
+                  z-index: 3;
+                  position: relative;
+                "
+              >
+                Collections
+              </button>
+            </div>
+            <div class="slider-container">
+              <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="./assets/imgs/screen-second-1.png"
+                      width="100%"
+                      alt=""
+                    />
+                    <p class="card-event">Event Name</p>
+                    <div class="card-location">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin"
+                      >
+                        <path
+                          d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <p>Location</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./assets/imgs/screen-second-2.png"
+                      width="100%"
+                      alt=""
+                    />
+                    <p class="card-event">Event Name</p>
+                    <div class="card-location">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin"
+                      >
+                        <path
+                          d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <p>Location</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./assets/imgs/screen-second-3.png"
+                      width="100%"
+                      alt=""
+                    />
+                    <p class="card-event">Event Name</p>
+                    <div class="card-location">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin"
+                      >
+                        <path
+                          d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <p>Location</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/imgs/frame-4.png" width="100%" alt="" />
+                    <p class="card-event">Event Name</p>
+                    <div class="card-location">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin"
+                      >
+                        <path
+                          d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <p>Location</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+            </div>
+          </section>
+          <section class="middle">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
+              cum!
+            </p>
+          </section>
+          <section class="right">
+            <p class="top-title">Explore Your First <br />Collectible</p>
+            <p class="event-name">
+              Meta <br />
+              Lives
+            </p>
+            <div class="live-in">
+              <p class="live-in-title">Live in astrix</p>
+            </div>
+            <div class="event-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              architecto aut ab pariatur nisi natus laudantium deserunt sequi id
+              eligendi!
+            </div>
+            <div class="audience-avatar-container">
+              <div class="audience-avatar">
+                <img src="./assets/imgs/Frame-1.png" alt="" />
+              </div>
+              <div class="audience-avatar">
+                <img src="./assets/imgs/Frame-1.png" alt="" />
+              </div>
+              <div class="audience-avatar">
+                <img src="./assets/imgs/Frame-1.png" alt="" />
+              </div>
+              <div class="audience-avatar">
+                <img src="./assets/imgs/Frame-1.png" alt="" />
+              </div>
+              <div class="audience-avatar">
+                <img src="./assets/imgs/Frame-1.png" alt="" />
+              </div>
+              <div class="audience-count">
+                <p>22k People Interested</p>
+              </div>
+            </div>
+            <div class="collectibles-container">
+              <p>Collectibles</p>
+              <div class="collectible-card">
+                <div class="coll-cards">
+                  <img src="./assets/imgs/Card-second-screen.png" alt="" />
+                </div>
+                <div class="coll-cards">
+                  <img src="./assets/imgs/Card-second-screen.png" alt="" />
+                </div>
+                <div class="coll-cards">
+                  <img src="./assets/imgs/Card-second-screen.png" alt="" />
+                </div>
+                <div class="coll-cards">
+                  <img src="./assets/imgs/Card-second-screen.png" alt="" />
+                </div>
+              </div>
 
-          <div class="swiper-container mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
-                  width="100%"
-                  alt=""
-                />
+              <div class="joinlist-btn">
+                <div class="join-btn">
+                  <button>Join Waitlist</button>
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://thumbs.dreamstime.com/b/beautiful-female-singer-singing-microphone-vertical-shot-black-background-49208817.jpg"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://i.pinimg.com/474x/b1/c8/80/b1c8808d546ad95ed7943ba3284d894e.jpg"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://www.hollywoodreporter.com/wp-content/uploads/2014/02/Shakira_performs_for_TMobile_aBryant_Park_2013_New_York_City.jpg"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <!-- Add more slides as needed -->
             </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-          </div>
+          </section>
         </div>
-      </section>
-      <section class="middle">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
-          cum!
-        </p>
-      </section>
-      <section class="right">
-        <p class="top-title">Explore Your First <br />Event</p>
-        <p class="event-name">Event Name</p>
-        <div class="venue-at">
-          <div class="location">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-map-pin"
-            >
-              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
-            <p>Venue</p>
-          </div>
-          <div class="timing">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-alarm-clock"
-            >
-              <circle cx="12" cy="13" r="8" />
-              <path d="M12 9v4l2 2" />
-              <path d="M5 3 2 6" />
-              <path d="m22 6-3-3" />
-              <path d="M6.38 18.7 4 21" />
-              <path d="M17.64 18.67 20 21" />
-            </svg>
-            <p>04/03/2024 @19:00</p>
-          </div>
-        </div>
-        <div class="event-details">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-          architecto aut ab pariatur nisi natus laudantium deserunt sequi id
-          eligendi!
-        </div>
-        <div class="artist-avatar">
-          <p>Artist Lineup</p>
-          <div class="artist-card">
-            <div class="card">
-              <img
-                src="https://thumbs.dreamstime.com/b/beautiful-female-singer-singing-microphone-vertical-shot-black-background-49208817.jpg"
-                width="100%"
-              />
-            </div>
-            <div class="card">
-              <img
-                src="https://hips.hearstapps.com/hmg-prod/images/selena-gomez-performs-onstage-during-the-2019-american-news-photo-1578668772.jpg"
-                width="100%"
-              />
-            </div>
-            <div class="card">
-              <img
-                src="https://www.hollywoodreporter.com/wp-content/uploads/2014/02/Shakira_performs_for_TMobile_aBryant_Park_2013_New_York_City.jpg"
-                width="100%"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="qr-code-container">
-          <div class="qr-code">
-            <img
-              src="https://cdn.ttgtmedia.com/rms/misc/qr_code_barcode.jpg"
-              alt=""
-            />
-          </div>
-          <div class="join-btn">
-            <button>Join Waitlist</button>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
@@ -241,10 +465,10 @@
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 2,
         spaceBetween: 50,
-        loop: false, // Loop is disabled for custom navigation
+        loop: false,
         autoplay: {
-          delay: 1500, // Time between slides in milliseconds
-          disableOnInteraction: false, // Keeps autoplay enabled after user interactions
+          delay: 1500,
+          disableOnInteraction: false,
         },
         on: {
           slideChangeTransitionEnd: function () {
@@ -265,8 +489,27 @@
         const slides = document.querySelectorAll(".swiper-slide");
         slides.forEach((slide) => (slide.style.transform = "scale(1)"));
         const activeSlides = document.querySelectorAll(".swiper-slide-active");
-        activeSlides.forEach((slide) => (slide.style.transform = "scale(1.1)"));
+        activeSlides.forEach(
+          (slide) => (slide.style.transform = "translateY(-10px)")
+        );
       });
+
+      function openSlide(slideName) {
+        var i;
+        var x = document.getElementsByClassName("newslide");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(slideName).style.display = "flex";
+      }
+
+      function toggleActive(btnType) {
+        const eventBtn = document.querySelector(".event-btn");
+        const collectionsBtn = document.querySelector(".collections-btn");
+
+        eventBtn.classList.toggle("active", btnType === "event");
+        collectionsBtn.classList.toggle("active", btnType === "collection");
+      }
     </script>
   </body>
 </html>
